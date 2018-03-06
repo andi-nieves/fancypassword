@@ -8,14 +8,20 @@ Requirements:
 Initialization:
 
 Basic usage:
-ID Selector:<br>
+ID Selector:
+```
 $("#yourpassword").fancypassword();
+```
 
-Class Selector: (Multiple elements)<br>
+Class Selector: (Multiple elements)
+```
 $(".yourpassword").fancypassword();
+```
 
-Inline init:<br>
+Inline init:
+```
 <input type="password" class="fancypassword">
+```
 
 Fancy password settings:
 ```
