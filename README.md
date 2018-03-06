@@ -29,7 +29,7 @@ Using class:
 Fancy password settings:
 ```
 let settings = $.extend({
-    generator: false,
+    generator: false, //show password generator button
     numbers: true,
     letters: true,
     specialchars: false,
@@ -37,7 +37,7 @@ let settings = $.extend({
     filter: function(generatedpassword){return generatedpassword;},
     onpasswordhide: function(e){},
     onpasswordshow: function(e){},
-    toall: false
+    toall: false //if true, copy the generated password to the other password input in the same form
 },options);
 ```
 Show password generator button
