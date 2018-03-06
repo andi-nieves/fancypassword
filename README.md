@@ -37,4 +37,7 @@ let settings = $.extend({
     toall: false
 },options);
 ```
-
+Show password generator button
+```
+$(".fancypassword").fancypassword({specialchars:true,generator: true});
+```
