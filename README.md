@@ -45,6 +45,6 @@ Show password generator button
 $(".fancypassword").fancypassword({specialchars:true,generator: true});
 ```
 View samples here<br>
-<a href="https://andi-nieves.github.io/fancypassword/">https://andi-nieves.github.io/fancypassword/</a>
+<a href="https://andi-nieves.github.io/fancypassword/">https://andi-nieves.github.io/fancypassword/</a><br>
 Powered by:<br>
 ![andinieves](https://avatars0.githubusercontent.com/u/16531944?s=96&v=4)
