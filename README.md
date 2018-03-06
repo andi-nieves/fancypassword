@@ -17,7 +17,10 @@ Class Selector: (Multiple elements)
 ```
 $(".yourpassword").fancypassword();
 ```
-
+Apply to all password input
+```
+$("input[type='password']").fancypassword();
+```
 Using class:
 ```
 <input type="password" class="fancypassword">
