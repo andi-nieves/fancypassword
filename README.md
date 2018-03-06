@@ -41,3 +41,6 @@ Show password generator button
 ```
 $(".fancypassword").fancypassword({specialchars:true,generator: true});
 ```
+
+Powered by:
+![andinieves](https://avatars0.githubusercontent.com/u/16531944?s=96&v=4)
