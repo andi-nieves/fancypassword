@@ -11,11 +11,14 @@ Basic usage:
 ID Selector:<br>
 $("#yourpassword").fancypassword();
 
-Class Selector: (Multiple elements)
+Class Selector: (Multiple elements)<br>
 $(".yourpassword").fancypassword();
 
-Fancy password settings:
+Inline init:<br>
+<input type="password" class="fancypassword">
 
+Fancy password settings:
+```
 let settings = $.extend({
     generator: false,
     numbers: true,
@@ -27,5 +30,5 @@ let settings = $.extend({
     onpasswordshow: function(e){},
     toall: false
 },options);
-
+```
 
