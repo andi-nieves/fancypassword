@@ -8,7 +8,7 @@ Requirements:
 Initialization:
 
 Basic usage:
-ID Selector:
+ID Selector:<br>
 $("#yourpassword").fancypassword();
 
 Class Selector: (Multiple elements)
