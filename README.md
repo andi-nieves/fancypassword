@@ -18,7 +18,7 @@ Class Selector: (Multiple elements)
 $(".yourpassword").fancypassword();
 ```
 
-Inline init:
+Using class:
 ```
 <input type="password" class="fancypassword">
 ```
