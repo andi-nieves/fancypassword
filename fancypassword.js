@@ -2,7 +2,9 @@
 $.fn.fancypassword = function(options){
 		
     $.fn._fancypassword = function(password){
-        
+        if($(this).closest(".showpass").length>0){
+            return;
+        }
         let _this = $(this);
         let additionalbtn = '';
         let charSets = "";
@@ -49,6 +51,7 @@ $.fn.fancypassword = function(options){
                 '<button type="button" class="btn btn-default showpass"><i class="fa fa-eye"></i></button>'+
                 '</span>'
             );
+        _this.attr("type","password");
         
         let generatePassword = function(length) {
             charSet = charSets;
@@ -58,9 +61,7 @@ $.fn.fancypassword = function(options){
         }
 
         _this.closest("div.showpass").on("click","button.generatepass",function(){
-            var type = _this.attr("type");
             let pass = settings.filter( settings.filter( generatePassword(10) ) );
-            _this.attr("type",type=="text" ? "password" : "text");
             if(settings.toall){
                 _this.closest("form").find("input[type='password']").val(pass);
             }
@@ -79,7 +80,12 @@ $.fn.fancypassword = function(options){
     }
 
     $.each($(this),function(){
+
         $(this)._fancypassword(options);
+
     });
 
 }
+$(document).on('ready',function(){
+    $(".fancypassword").fancypassword();
+});
