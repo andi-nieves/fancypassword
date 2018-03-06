@@ -2,13 +2,17 @@
 Make your lousy password input fancy
 
 Requirements:
-jQuery
-Bootstrap css
+- jQuery
+- Bootstrap css
 
 Initialization:
 
 Basic usage:
+ID Selector:
 $("#yourpassword").fancypassword();
+
+Class Selector: (Multiple elements)
+$(".yourpassword").fancypassword();
 
 Fancy password settings:
 
