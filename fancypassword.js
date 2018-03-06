@@ -38,7 +38,7 @@ $.fn.fancypassword = function(options){
         }
 
         if(settings.generator){
-            additionalbtn = '<button type="button" style="margin-right: 0" class="btn btn-default generatepass"><i class="fa fa-key"></i></button>';
+            additionalbtn = '<button type="button" style="margin-right: 0" class="btn btn-default generatepass"><i class="glyphicon glyphicon-refresh"></i></button>';
         }
 
         _this.wrap(
@@ -48,7 +48,7 @@ $.fn.fancypassword = function(options){
         _this.after(
                 '<span class="input-group-btn">' +
                 additionalbtn +
-                '<button type="button" class="btn btn-default showpass"><i class="fa fa-eye"></i></button>'+
+                '<button type="button" class="btn btn-default showpass"><i class="glyphicon glyphicon-eye-open"></i></button>'+
                 '</span>'
             );
         _this.attr("type","password");
@@ -72,8 +72,11 @@ $.fn.fancypassword = function(options){
             var type = _this.attr("type");
             _this.attr("type",type=="text" ? "password" : "text");
             if(type=="text"){
+                $(this).html('<i class="glyphicon glyphicon-eye-open"></i>');
                 settings.onpasswordhide();
             }else{
+                $(this).html('<i class="glyphicon glyphicon-eye-close"></i>');
+                
                 settings.onpasswordshow();
             }
         });
